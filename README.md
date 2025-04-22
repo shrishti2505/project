@@ -5,18 +5,23 @@ Stay informed about the current temperature, wind speed, humidity, and cloud cov
 Whether you want to plan your day, check the weather before a trip, or simply stay updated, WeatherApp has got you covered. 
 With a user-friendly interface and accurate data from reputable weather APIs, you can trust WeatherApp to deliver reliable weather information whenever you need it.
 
-# Features
+## Features
 
-1. Location-based Weather: Upon loading the website, the app will request your location to provide weather information specific to your area.
-2. City Search: You can also search for weather data by entering the name of a city.
-3. Real-time Updates: The app retrieves data from a weather API to ensure that you receive up-to-date weather information.
-4. User-friendly Interface: The weather information is displayed in a visually appealing manner, making it easy to understand and navigate.
+- **Location-based Weather**: Get instant weather updates for your current location
+- **City Search**: Search for weather data by entering any city name
+- **Real-time Updates**: Access up-to-date weather information from reliable APIs
+- **Modern UI**: Beautiful, responsive interface with smooth animations and transitions
+- **Glassmorphism Design**: Elegant, modern design with frosted glass effects
 
-# Technologies Used
+## Technologies Used
 
-1. HTML5, CSS3, and JavaScript: The core technologies used for the front-end development of the app.
-2. Geolocation API: Retrieves the user's latitude and longitude coordinates to provide accurate weather data.
-3. Weather API: Retrieves weather data based on the user's location or city name.
+- **Frontend**:
+  - HTML5
+  - Tailwind CSS for styling
+  - JavaScript for interactivity
+- **APIs**:
+  - Geolocation API for user location
+  - OpenWeatherMap API for weather data
 
 # How to Use
 
@@ -35,13 +40,8 @@ No installation is required for this web application.
 1. I would like to thanks Angela Yu for her Web Dev Course. Her Course made all this possible.
 2. I also used "openweathermap" API for this project which is a free API and that helped me a lot for this project
 
-# Contact
+## Contributing
 
-If you have any questions, feedback, or inquiries, please don't hesitate to reach out to me. You can contact me by email - anuragaryanmeh1@gmail.com
-or create an issue on the GitHub repository.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-# Final Thoughts
-
-I hope you find the WeatherSense useful for checking weather conditions in your area or any city you're interested in. 
-Enjoy using the app and stay informed about the weather!
-
+Made with ❤️ by Shrishti Verma
