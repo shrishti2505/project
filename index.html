@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AakashVani - Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen font-merriweather">
+    <div class="container mx-auto px-4 py-8 max-w-2xl">
+        <h1 class="text-4xl font-bold text-white text-center mb-8">AakashVani</h1>
+
+        <div class="flex justify-center space-x-4 mb-6">
+            <p class="tab cursor-pointer text-white hover:text-blue-200" data-userWeather>Your City</p>
+            <p class="tab cursor-pointer text-white hover:text-blue-200" data-searchWeather>Search City</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6">
+            <!-- grant location container-->
+            <div class="sub-container grant-location-container text-center" data-grantLocationContainer>
+                <img src="./assets/location.png" class="mx-auto mb-4" width="80" height="80" loading="lazy">
+                <p class="text-white text-xl mb-2">Grant Location Access</p>
+                <p class="text-white/80 mb-4">Allow Access to get weather information</p>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition-colors" data-grantAccess>Grant Access</button>
+            </div>
+
+            <!-- search form -->
+            <form class="form-container hidden" data-searchForm>
+                <div class="flex gap-2">
+                    <input class="flex-1 px-4 py-2 rounded-lg bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter City..." data-searchInput>
+                    <button class="bg-blue-500 hover:bg-blue-600 p-2 rounded-lg transition-colors" type="submit">
+                        <img src="./assets/search.png" width="20" height="20" loading="lazy">
+                    </button>
+                </div>
+            </form>
+
+            <!-- loading screen -->
+            <div class="sub-container loading-container hidden text-center" data-loadingContainer>
+                <img src="./assets/loading.gif" class="mx-auto mb-4" width="150" height="150">
+                <p class="text-white">Loading</p>
+            </div>
+
+            <!-- weather info -->
+            <div class="sub-container user-info-container hidden text-center" data-userInfoContainer>
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <p class="text-2xl text-white" data-cityName></p>
+                    <img data-countryIcon class="w-8 h-8">
+                </div>
+
+                <p class="text-white/80 mb-2" data-weatherDesc></p>
+                <img data-weatherIcon class="mx-auto mb-4 w-24 h-24">
+                <p class="text-4xl font-bold text-white mb-6" data-temp></p>
+
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-white/10 rounded-lg p-4">
+                        <img src="./assets/wind.png" class="mx-auto mb-2 w-8 h-8">
+                        <p class="text-white/80 text-sm">windspeed</p>
+                        <p class="text-white font-semibold" data-windspeed></p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-lg p-4">
+                        <img src="./assets/humidity.png" class="mx-auto mb-2 w-8 h-8">
+                        <p class="text-white/80 text-sm">humidity</p>
+                        <p class="text-white font-semibold" data-humidity></p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-lg p-4">
+                        <img src="./assets/cloud.png" class="mx-auto mb-2 w-8 h-8">
+                        <p class="text-white/80 text-sm">Clouds</p>
+                        <p class="text-white font-semibold" data-cloudiness></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
